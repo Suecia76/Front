@@ -42,7 +42,7 @@ const RegistroUsuario = () => {
       const datosConRol = { ...data, rol: "usuario comun" };
       console.log("Datos enviados:", datosConRol);
       const response = await axios.post(
-        " import.meta.env.VITE_BASE_URL+'/usuarios/registrar'",
+        " import.meta.env.BASE_URL+'/usuarios/registrar'",
         datosConRol
       );
 
